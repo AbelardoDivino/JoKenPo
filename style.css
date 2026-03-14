@@ -13,7 +13,11 @@ header h1{
 }
 
 .container{
-    
+    height: auto;
+    width: 600px;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
 }
 
 footer{
