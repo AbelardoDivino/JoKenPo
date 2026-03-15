@@ -14,6 +14,10 @@ player2btn.addEventListener("click",()=>{
 
     let p2 = Number(prompt("jogador 2 digite sua jogada [1 - pedra 2 tesoura e 3 papel]"))
 
+    if (p1 === p2 ) {
+        alert("empate")
+    }
+
 if (p1=== 1 && p2 === 2) {
     alert("Parabens jogador 1 venceu")
 }
@@ -26,28 +30,38 @@ else if (p1 === 3 && p2 === 1) {
    alert("Parabens jogador 1 venceu")
 }
 
-else if (p2 === 1 && p1 === 2) {
-    alert("Parabens jogador 2 venceu")
-
-}
-
-else if (p2 === 2 && p1 === 3) {
-        alert("Parabens jogador 2 venceu")
-
-}
-
-else if (p2 === 3 && p1 === 1) {
- alert("Parabens jogador 2 venceu")
-
-}
 
 else{
-    alert("empate")
+    alert("jogador 2 venceu")
 }
 
 
 })
 
 playpcbtn.addEventListener("click",()=>{
+
+    let jogador = Number(prompt("jogador 1 digite sua jogada [1 pedra 2 tesoura e 3 papel] "))
+
+    let pc = Math.floor(Math.random() *3)+1
+
+    if (jogador === pc ) {
+        alert("empato PORRA")
+    }
+
+ else   if (jogador=== 1 && pc === 2) {
+    alert("Parabens jogador 1 venceu")
+}
+
+else if (jogador === 2 && pc === 3 ) {
+        alert("Parabens jogador 1 venceu")
+}
+
+else if (jogador === 3 && pc === 1) {
+   alert("Parabens jogador 1 venceu")
+}
+
+else{
+    alert("pc venceu")
+}
 
 })
