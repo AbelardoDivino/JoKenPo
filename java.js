@@ -12,6 +12,10 @@ let fotopedra = document.getElementById("fotopedra")
 let fotopapal = document.getElementById("fotopapel")
 let fototesoura = document.getElementById("fototesoura")
 
+let papel1 = document.getElementById("papel")
+let tesoura1  = document.getElementById("tesoura")
+let pedra1 = document.getElementById("pedra")
+
 player2btn.addEventListener("click",()=>{
 
     alert("jogar com 2 jogadores ihhihihhi")
@@ -83,6 +87,47 @@ if (modo === 1) {
     // }
 
 
+papel1.addEventListener("click",()=>{
+    let papel =1
+})
+
+tesoura1.addEventListener("click",()=>{
+    let tesoura = 0
+})
+
+pedra1.addEventListener("click",()=>{
+    let pedra = 2
+})
+
+let jogador1 = Number(prompt("digite 1 valor entre 1,0 e 2"))
+let jogador2 = Number(prompt("digite 1 valor entre 1,0 e 2"))
+
+if (jogador1 === jogador2) {
+    alert("empate")
+}
+
+else if (jogado1 === 1 && jogador2 === 2 ) {
+        alert("jogador 1 venceu")
+}
+
+else if (jogador1 === 0 && jogador1 === 1) {
+    alert("jogador 1 venceu")
+}
+
+else if (jogador1 === 2 && jogador2 === 0) {
+    alert("jogador 1 venceu")
+}
+
+else{
+    alert("jogador 2 venceu")
+}
+
+}
+
+if (modo === 2) {
+    
+    let jogar
+    let pc = Math.floor(Math.random()*3)
 
 }
 
