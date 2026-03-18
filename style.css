@@ -1,54 +1,110 @@
 *{
     margin: 0;
     padding: 0;
-    text-align: justify;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-header h1{
-    text-align: center;
-    padding: 10px;
-    background-color: gray;
+/* Corpo da página */
+body{
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-    .i2player{
-        width: auto;
-        height: 45px;
-        border-radius: 5px;
-        bottom: 10px;
-    }
+/* Header */
+header h1{
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: white;
+    letter-spacing: 2px;
+}
 
-    a:hover{
-        background-color: red;
-        width: 10px;
-        color: red;
-    }
-
-    .playcspc{
-         width: auto;
-        height: 45px;
-        border-radius: 5px;
-        bottom: 10px;
-    }
-
+/* Container principal */
 .container{
-    height: auto;
     width: 600px;
-    padding: 10px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
     display: grid;
+    gap: 25px;
+}
+
+/* Texto */
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* imagens escolha modo */
+.i2player,
+.playcspc{
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.i2player:hover,
+.playcspc:hover{
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+/* botão jogar */
+#jogarcomimagen{
+    padding: 10px 20px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#jogarcomimagen:hover{
+    background: #1e3c72;
+}
+
+/* área das jogadas */
+.jogadas{
+    display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-#pedra,#papel,#tesoura{
-    width: auto;
-    height: 100px;
-    gap: 10px;
+/* botões das jogadas */
+.jogadas button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+/* imagens pedra papel tesoura */
+#pedra,
+#papel,
+#tesoura{
+    height: 100px;
+    transition: 0.3s;
+}
+
+.jogadas button:hover img{
+    transform: scale(1.15);
+}
+
+/* Footer */
 footer{
-    background-color: darkgray;
-    width: auto;
-    height: 45px;
+    margin-top: auto;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
